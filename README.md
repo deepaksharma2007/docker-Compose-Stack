@@ -36,15 +36,17 @@ Docker Stack is a feature of Docker Swarm that allows you to deploy and manage m
 
 ## Example Workflow 🌐
 **Step-1** Create a docker-compose.yml and other required files in a separate directory
+
 **Step-2** Deploy the stack:
 
-```docker stack deploy --compose-file docker-compose.yml myapp
+```docker stack deploy --compose-file docker-compose.yml stackdemo```
+
 
 **Step-3** Monitor services:
-```docker stack services myapp
+```docker stack services stackdemo```
 
 **Step-4** Scale the web service:
-```docker service scale myapp_web=5
+```docker service scale stackdemo_web=5```
 
 **Step-5** Remove the stack:
-```docker stack rm myapp
+```docker stack rm stackdemo```
