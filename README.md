@@ -16,3 +16,10 @@ Docker Stack is a feature of Docker Swarm that allows you to deploy and manage m
    Used to connect services across multiple nodes. Docker automatically creates these networks for stack services.
 4. Desired State
    Docker Swarm ensures services are always running in their desired state (e.g., replicas, configuration).
+
+### How Docker Stack Works
+1. Define your application stack in a docker-compose.yml file.
+   Example: A stack with a web service and a Redis cache.
+2. Deploy the stack using docker stack deploy.
+3. Swarm schedules and distributes services across nodes in the cluster.
+4. Monitor and manage the stack using docker stack and docker service commands.
