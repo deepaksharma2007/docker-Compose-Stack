@@ -23,3 +23,14 @@ Docker Stack is a feature of Docker Swarm that allows you to deploy and manage m
 2. Deploy the stack using docker stack deploy.
 3. Swarm schedules and distributes services across nodes in the cluster.
 4. Monitor and manage the stack using docker stack and docker service commands.
+
+### When to Use Docker Stack?
+- Production environments for microservices-based applications.
+- When high availability and fault tolerance are needed.
+- To deploy complex applications with multiple interconnected services (frontend, backend, database, etc.).
+
+### When NOT to Use Docker Stack?
+- For local development: Use docker-compose instead.
+- If you don’t need orchestration or scaling.
+- In environments where Kubernetes is the standard for orchestration.
+
