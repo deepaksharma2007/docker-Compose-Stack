@@ -34,3 +34,17 @@ Docker Stack is a feature of Docker Swarm that allows you to deploy and manage m
 - If you don’t need orchestration or scaling.
 - In environments where Kubernetes is the standard for orchestration.
 
+## Example Workflow 🌐
+**Step-1** Create a docker-compose.yml and other required files in a separate directory
+**Step-2** Deploy the stack:
+
+```docker stack deploy --compose-file docker-compose.yml myapp
+
+**Step-3** Monitor services:
+```docker stack services myapp
+
+**Step-4** Scale the web service:
+```docker service scale myapp_web=5
+
+**Step-5** Remove the stack:
+```docker stack rm myapp
